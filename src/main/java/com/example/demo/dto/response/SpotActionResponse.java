@@ -4,8 +4,8 @@ import com.example.demo.dao.Spot;
 import com.example.demo.dao.SpotState;
 
 public class SpotActionResponse {
-    private Long spotId;
-    private SpotState state;
+    private final Long spotId;
+    private final SpotState state;
 
     public SpotActionResponse(Spot spot) {
         this.spotId = spot.getId();

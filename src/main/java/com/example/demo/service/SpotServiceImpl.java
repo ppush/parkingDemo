@@ -16,10 +16,6 @@ public class SpotServiceImpl implements SpotService {
     @Autowired
     SpotRepository spotRepository;
 
-    @Autowired
-    SpotActionRepository spotActionRepository;
-
-
     @Override
     public List<Spot> getAllSpots() {
         return spotRepository.findAll();

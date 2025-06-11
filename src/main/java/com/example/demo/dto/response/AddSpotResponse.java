@@ -3,8 +3,8 @@ package com.example.demo.dto.response;
 import com.example.demo.dao.Spot;
 
 public class AddSpotResponse {
-    private String description;
-    private Long spotId;
+    private final String description;
+    private final Long spotId;
 
     public AddSpotResponse(Spot spot) {
         spotId = spot.getId();

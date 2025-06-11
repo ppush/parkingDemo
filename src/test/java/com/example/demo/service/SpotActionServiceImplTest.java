@@ -1,11 +1,8 @@
 package com.example.demo.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.sql.Timestamp;
 
 import com.example.demo.exception.BookNotAvailableException;
-import com.example.demo.exception.SpotNotAvailableException;
 import com.example.demo.repository.SpotActionRepository;
 import com.example.demo.repository.SpotBookRepository;
 import com.example.demo.repository.SpotRepository;

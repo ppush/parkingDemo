@@ -1,6 +1,5 @@
 package com.example.demo.dao.builder;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 import com.example.demo.dao.ActionType;

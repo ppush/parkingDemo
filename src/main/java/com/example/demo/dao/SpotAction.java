@@ -1,6 +1,5 @@
 package com.example.demo.dao;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 import jakarta.persistence.CascadeType;
