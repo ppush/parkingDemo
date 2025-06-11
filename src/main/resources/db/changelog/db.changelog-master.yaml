@@ -1,0 +1,95 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: vahan
+      changes:
+        - createTable:
+            tableName: spot_action
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: time
+                  type: datetime
+                  constraints:
+                    nullable: false
+              - column:
+                  name: action_type
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: spot_id
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: spot_book_id
+                  type: int
+                  constraints:
+                    nullable: true
+        - createTable:
+            tableName: spot_book
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: time_from
+                  type: datetime
+                  constraints:
+                    nullable: false
+              - column:
+                  name: time_to
+                  type: datetime
+                  constraints:
+                    nullable: false
+              - column:
+                  name: book_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: book_state
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+        - createTable:
+            tableName: spot
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: state
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
